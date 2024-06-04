@@ -9,8 +9,13 @@ https://github.com/kern-crates/testing
 4、测试报告生成并合并
 5、测试报告邮件发送
 
-# 自动化测试框架pytest及测试报告生成应用allure作用
-pytest文件即为实现测试自动化的框架。在该文件目录中，
+# 自动化测试框架pytest及测试报告生成应用allure解析
+pytest文件即为实现测试自动化的框架。在该文件目录中，config.py文件为pytest执行时读取的配置文件，其中按照类别分别定义了clippy测试的配置，cargo test测试的配置，monolithic测试配置以及一些需要在报告中展示的信息 。
+测试核心代码为pytest/testcase目录下的test_arceos.py中的代码，在该代码中定义了以上三种测试用例的具体细节。
+allure为测试报告生成应用，该应用通过其工作目录下的报告文件生成网页端报告，并具有详细的测试报告分类及统计。
+
+# V2.0使用方法
+1、
 
 
 
